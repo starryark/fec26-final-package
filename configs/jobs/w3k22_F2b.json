@@ -1,0 +1,7 @@
+[
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_notsL_s85 --alldata --feat nots --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 85 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_notsL_s86 --alldata --feat nots --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 86 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_notsL_s87 --alldata --feat nots --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 87 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_notsL_s125 --alldata --feat nots --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 125 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_notsL_s126 --alldata --feat nots --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 126 --vram_gb 6"
+]

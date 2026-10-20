@@ -1,0 +1,267 @@
+{
+ "members": [
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shape_s0",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shape_s1",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shapeA_s2",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shapeL_s3",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shape_s40",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shape_s41",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shapeA_s42",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shapeL_s43",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shape_s80",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shape_s81",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shapeA_s82",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_shapeL_s83",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s5",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s6",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s7",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s45",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s46",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s47",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s85",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s86",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s87",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s125",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s126",
+   "weight": 0.041666666666666664
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxw3e_notsL_s127",
+   "weight": 0.041666666666666664
+  }
+ ],
+ "fallback": [
+  {
+   "kind": "b",
+   "tag": "d3d_b60axi_notsL_s5",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axi_notsL_s6",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axi_notsL_s7",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axi_notsL_s8",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axi_notsL_s9",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axi_notsL_s10",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axi_notsL_s11",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axj_notsL_s45",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axj_notsL_s46",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axj_notsL_s47",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axj_notsL_s48",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axj_notsL_s49",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axj_notsL_s50",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_b60axj_notsL_s51",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxk_notsL_s85",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxk_notsL_s86",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxk_notsL_s87",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxk_notsL_s88",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxk_notsL_s89",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxk_notsL_s90",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxk_notsL_s91",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxl_notsL_s125",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxl_notsL_s126",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxl_notsL_s127",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxl_notsL_s128",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxl_notsL_s129",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxl_notsL_s130",
+   "weight": 0.03571428571428571
+  },
+  {
+   "kind": "b",
+   "tag": "d3d_bxaxl_notsL_s131",
+   "weight": 0.03571428571428571
+  }
+ ],
+ "note": "agent fpkg 2026-10-12 (FINAL_PACKAGE_20261012 G2): proposed 24-member subset of W3k44 that fits the 24 A100-h rebuild budget at the measured PCIe factor (22.0 A100-h incl. inference): F1 = W3kE120 shape-family seed sets 0-3, 40-43, 80-83 (3 x {shape, shape, shapeA, shapeL}); F2 = W3kE120 notsL seeds 5-7, 45-47, 85-87, 125-127 (3 per seed group); family weights 1/2 each; fallback = the OLD 28 notsL (as W3k44). Chosen by structure before any score; no new training. NOT built or scored."
+}

@@ -1,0 +1,16 @@
+[
+ "python -B fec/train_d3d_b.py --tag d3d_b60axk_notsL_s85 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 85 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axk_notsL_s86 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 86 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axk_notsL_s87 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 87 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axk_notsL_s88 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 88 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axk_notsL_s89 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 89 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axk_notsL_s90 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 90 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axk_notsL_s91 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 91 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axl_notsL_s125 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 125 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axl_notsL_s126 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 126 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axl_notsL_s127 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 127 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axl_notsL_s128 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 128 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axl_notsL_s129 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 129 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axl_notsL_s130 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 130 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_b60axl_notsL_s131 --alldata --feat nots --epochs 60 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 131 --vram_gb 6"
+]

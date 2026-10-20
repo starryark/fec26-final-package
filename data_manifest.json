@@ -1,0 +1,299 @@
+{
+ "built_utc": "2026-10-20T14:23:19+00:00",
+ "source_git_sha": "ca734729c959a293cbcbe68a5ae46a6f5b5bcbda",
+ "datasets": {
+  "Sophelio/fusion-equilibrium-challenge": {
+   "revision": "1e280905b85f2a6fdde7e06fca8cf3a1edf447cb",
+   "configs": [
+    "diii_d_train",
+    "diii_d_public_test",
+    "mast_public_test"
+   ],
+   "used_for": "training (diii_d_train), MAST generator inputs and geometry (mast_public_test), Dev-phase predictions"
+  },
+  "ganatma/fusion-equilibrium-challenge-final": {
+   "revision": "965040c12b814f33c8e7209f6b1799932247e793",
+   "configs": [
+    "diii_d_private_test",
+    "mast_private_test"
+   ],
+   "used_for": "Final predictions (inputs only)"
+  }
+ },
+ "split": {
+  "file": "frozen/split/exposed_train_stems.json",
+  "rule": "whole-shot split of diii_d_train: train/val/test = fec/dataset.py split_of(stem) with the exposed TRAIN stems; Final members refit on train+val+test (--alldata) after the one-time TEST evaluation"
+ },
+ "data_fixes": {
+  "starter_data_fixes": "not applied to the DIII-D Ip axis: our idx rule (fec/ip_timebase.py) instead, see PROVENANCE.md; MAST Thomson core alignment (issue #5) as fec/extract.py"
+ },
+ "frozen": {
+  "frozen/betan_transfer/selection.json": {
+   "file": "frozen/betan_transfer/selection.json",
+   "dest": "fec_work/betan_transfer/selection.json",
+   "sha256": "ea36ea773298627fb0455a6e02b31816f930a3413964d4c0e6ac422197f150f5",
+   "source_sha256": "ea36ea773298627fb0455a6e02b31816f930a3413964d4c0e6ac422197f150f5"
+  },
+  "frozen/betan_transfer/val_report.json": {
+   "file": "frozen/betan_transfer/val_report.json",
+   "dest": "fec_work/betan_transfer/val_report.json",
+   "sha256": "81d271ea1b563099db293bf4c4b41358af9f76d5da0ee2ccb3fb92a6a20ccc42",
+   "source_sha256": "81d271ea1b563099db293bf4c4b41358af9f76d5da0ee2ccb3fb92a6a20ccc42"
+  },
+  "frozen/split/exposed_train_stems.json": {
+   "file": "frozen/split/exposed_train_stems.json",
+   "dest": "fec_work_idx/exposed_train_stems.json",
+   "sha256": "ac6f3961e1defdaa56be86ba9823e6fd6b3e2877fcaab2bfc1c8b7d01e0aa245",
+   "source_sha256": "ac6f3961e1defdaa56be86ba9823e6fd6b3e2877fcaab2bfc1c8b7d01e0aa245"
+  },
+  "frozen/d3d/env_train.npz": {
+   "file": "frozen/d3d/env_train.npz",
+   "dest": "fec_work_idx/ds_b/diii_d_train/env_train.npz",
+   "sha256": "fc4ce12f0fc3e36c4ce8bcacaac4bbe62d3410b851477ad9ee1ee0f55e3d8505",
+   "source_sha256": "fc4ce12f0fc3e36c4ce8bcacaac4bbe62d3410b851477ad9ee1ee0f55e3d8505"
+  },
+  "frozen/geometry/mast_public_test.json": {
+   "file": "frozen/geometry/mast_public_test.json",
+   "dest": "fec_work/geometry/mast_public_test.json",
+   "sha256": "71fa2d8f78bd0e5afc158996fbebab4180abf94685c605d0ab9c9fd45bff2e5f",
+   "source_sha256": "71fa2d8f78bd0e5afc158996fbebab4180abf94685c605d0ab9c9fd45bff2e5f"
+  },
+  "frozen/geometry/diii_d_public_test.json": {
+   "file": "frozen/geometry/diii_d_public_test.json",
+   "dest": "fec_work/geometry/diii_d_public_test.json",
+   "sha256": "23c25d58ec8d865966e07d18aab5db01b57d8da5ea542792ba33660580c89605",
+   "source_sha256": "23c25d58ec8d865966e07d18aab5db01b57d8da5ea542792ba33660580c89605"
+  },
+  "frozen/geometry/diii_d_train.json": {
+   "file": "frozen/geometry/diii_d_train.json",
+   "dest": "fec_work/geometry/diii_d_train.json",
+   "sha256": "23c25d58ec8d865966e07d18aab5db01b57d8da5ea542792ba33660580c89605",
+   "source_sha256": "23c25d58ec8d865966e07d18aab5db01b57d8da5ea542792ba33660580c89605"
+  },
+  "frozen/geometry/mast_M_sol0.5.npy": {
+   "file": "frozen/geometry/mast_M_sol0.5.npy",
+   "dest": "fec_work/geometry/mast_M_sol0.5.npy",
+   "sha256": "fed077d0cbfccdc2d7aeaad69ab0db20ba7c992aae7d61192f45be25abc186df",
+   "source_sha256": "fed077d0cbfccdc2d7aeaad69ab0db20ba7c992aae7d61192f45be25abc186df"
+  },
+  "frozen/geometry/mast_limiter_fairmast.npz": {
+   "file": "frozen/geometry/mast_limiter_fairmast.npz",
+   "dest": "fec_work/geometry/mast_limiter_fairmast.npz",
+   "sha256": "337bc60bea008f4f3908c49560a1604aa4996d67a2c117cc6d630c34d444fc04",
+   "source_sha256": "337bc60bea008f4f3908c49560a1604aa4996d67a2c117cc6d630c34d444fc04"
+  },
+  "frozen/amort/v6_r40_pool.npy": {
+   "file": "frozen/amort/v6_r40_pool.npy",
+   "dest": "fec_work/amort/v6_r40_pool.npy",
+   "sha256": "d47789621552f5539f61fd776842ee9861d8472a8713ecad085e2f57c98690d5",
+   "source_sha256": "d47789621552f5539f61fd776842ee9861d8472a8713ecad085e2f57c98690d5"
+  },
+  "frozen/amort/v6_config.json": {
+   "file": "frozen/amort/v6_config.json",
+   "dest": "fec_work/amort/v6_config.json",
+   "sha256": "f5862f8ec2dc719355ea8acc156e7434aab91ad8304f49ab8e12818566efd9c0",
+   "source_sha256": "ed6915a4859dcf2314e50bb494530dd0b7fb2cd65a4d7bd43968d2557883fb4d",
+   "template": "{FEC_WORK} is replaced by the work root at install"
+  },
+  "frozen/amort/v4_hp.json": {
+   "file": "frozen/amort/v4_hp.json",
+   "dest": "fec_work/amort/v4_hp.json",
+   "sha256": "66d0e4d4de1f3b650cd2ed402762f40cfe69a5cc6a86130ea4d9ce9f1d5c05e7",
+   "source_sha256": "894db308aa2e9ff6bd84e4b0308920192bf5d2031f47afc71ce942f42b172c4c",
+   "template": "{FEC_WORK} is replaced by the work root at install"
+  }
+ },
+ "train_label_ranges": {
+  "q95": [
+   0.2932361364364624,
+   19.520709991455078
+  ],
+  "betaN": [
+   0.0,
+   9.815239906311035
+  ],
+  "rule": "q95: TRAIN-frame 0.01/99.99 percentiles; betaN: [0, 99.99 percentile] (fec.build_submission.train_ranges)",
+  "n_train_frames": 1447735,
+  "scal_sha256": "67ad85817dccb5b65c7104e4023fbb92181f55a72dbec3fe1d50cbc3ab57b212",
+  "info_sha256": "e531d5bc3cd4cf27fde947b76cb225870cc830879f05691d823e0abadb9bce53"
+ },
+ "synthetic": {
+  "generator": "fec/amort_gen7.py gen --f 0.55 --flavour h (FEC_AMORT_SOLF=0.55)",
+  "inputs": "PUBLIC MAST inputs only (coil currents, Ip, Thomson) + frozen/amort/*",
+  "files": [
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0000.npz",
+    "bytes": 74166124,
+    "sha256": "ef033dd99bea7ed14deb42d1c77857a869d777ca245b2c90363dfc335fc8acc4"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0001.npz",
+    "bytes": 73906578,
+    "sha256": "18e755d8d213d8dbac388d384f3512711ba9036744464159ff6e2b4b79ff105f"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0002.npz",
+    "bytes": 74129046,
+    "sha256": "fa4cc4336b2a58c5eb26b0067cc2918709f5b1aabf4e8c6f906cfbfc1c9de423"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0003.npz",
+    "bytes": 73758266,
+    "sha256": "eefd072b5eca64f45c5256a06f97fcf8329eb0e96cdfe1e930563b2b172016f5"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0004.npz",
+    "bytes": 73869500,
+    "sha256": "d40beb3693a92fe4644b337444dfa1fb0ad843318227e25d6801538ebeebfadd"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0005.npz",
+    "bytes": 73980734,
+    "sha256": "a06e7e3cf7a067965304a351e27fa1aa52a924336a76eee40de39d3267e4d84f"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0006.npz",
+    "bytes": 74091968,
+    "sha256": "facdb24fbebe2dc53b646b62e715da96536bcf564763a67c37cd2d98039e8c96"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0007.npz",
+    "bytes": 73795344,
+    "sha256": "400db951698f5db8cbe27349f747207743323fccefbf2175cb8c2788f1e2437c"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0008.npz",
+    "bytes": 73906578,
+    "sha256": "e68019730e3a48ed70ba9c85cac7e75ecfae2a09c63f2a8cf7d48659f0227781"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0009.npz",
+    "bytes": 73647032,
+    "sha256": "1aa60fab7761c59c702aa847d357a883835a2d02741b1b3a7524a77a2c1a2944"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0010.npz",
+    "bytes": 73721188,
+    "sha256": "ecfb383fe6705f9e5cc4f520814f2f21f2ed9b0e98f24d92f82d5d9ef0f95d30"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0011.npz",
+    "bytes": 74166124,
+    "sha256": "5d65865d7e6a8aa2a13c49302d6c2f09f5951b8ba27af9eb06261bb521fe29de"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0012.npz",
+    "bytes": 74129046,
+    "sha256": "8203ccde133645e55df97d55c95383653ce7b4a4679519648dbf5390f90c16ca"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0013.npz",
+    "bytes": 73795344,
+    "sha256": "37eaa9480355e6e10d0e7d165a054981e5460fdcccb292c33ef6bdf82698d566"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0014.npz",
+    "bytes": 74054890,
+    "sha256": "f3b14859c9a9d5c991d15e4310f21d2cfdf434844e889bdea64f9c38671b6c36"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0015.npz",
+    "bytes": 73758266,
+    "sha256": "3d43e3171683ebaec67226d72314e182888d84128c3989d63d54e09d918b22f4"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l0_0016.npz",
+    "bytes": 65007858,
+    "sha256": "b11479608661a262de5ecbac043d8dffafe3dd560caf6e79e1c1d577f7b10278"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0000.npz",
+    "bytes": 74166124,
+    "sha256": "3c7df535300517443024ade323b387ca4c6773ec597a9d757b68f44818564375"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0001.npz",
+    "bytes": 73906578,
+    "sha256": "220f737a8293ddbab38b1d7abea2a6a9a31ebec70743a70a1b80cbc85b076b94"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0002.npz",
+    "bytes": 74129046,
+    "sha256": "e24029e96be3e0d00868b7982b3bac5ad01671f10beb4f85616646695f9b5c96"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0003.npz",
+    "bytes": 73758266,
+    "sha256": "db48b32d611aafc12871669ba8d0afd6c68b7aad47cec78f100ce79d7a28e1eb"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0004.npz",
+    "bytes": 73869500,
+    "sha256": "b6136c8f6b886da015b88fc03e94b9e6e2acc4948088a4c0ac7f13f5a540bedd"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0005.npz",
+    "bytes": 73980734,
+    "sha256": "4ae703ad8b8aa284fcdfc5c2ad8568de6f3e414ea79f82cff41183cec35acb78"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0006.npz",
+    "bytes": 74091968,
+    "sha256": "584e28fcc5f833241e6ece5b65c67c7244b86e62869e25e987314162a5582fdc"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0007.npz",
+    "bytes": 73795344,
+    "sha256": "ffd8b3be38957346a102940a08390bb39a92b2956ec63305708d63630966b30d"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0008.npz",
+    "bytes": 73906578,
+    "sha256": "a5b0de63f0e311aa0683109b550625e5d41c9de68100b59f8eb9b847934f9e8b"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0009.npz",
+    "bytes": 73647032,
+    "sha256": "7a0b40cd48bb34d668e64091eef732adb00186be660cea1cc2c4837011f4f8c8"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0010.npz",
+    "bytes": 73721188,
+    "sha256": "91369ae5d6d9ca48e59ac43be92db70caf94951a1e3204ff511cd1b3e5eeccc3"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0011.npz",
+    "bytes": 74166124,
+    "sha256": "010aad8111618646e055a3d601fe10467d9b875df366beed2350907cf6d7514c"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0012.npz",
+    "bytes": 74129046,
+    "sha256": "c7e2861aded569c064619d916e136851fb2eb1ee28f31d1600252a9fc7904612"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0013.npz",
+    "bytes": 73795344,
+    "sha256": "4540173ed57ec90fec3a05b46082bb28cb50e68fd775759d180c11d520223fa2"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0014.npz",
+    "bytes": 74054890,
+    "sha256": "75f7d14f2e8c0e571a28b3029891fe36600702409d54c5b4ef54f41c1fe4fd94"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0015.npz",
+    "bytes": 73758266,
+    "sha256": "79585d75c7969928cbe9c81c8c23e8a76876bc0e0c5afe59880b82e7c3dee677"
+   },
+   {
+    "path": "synthetic/gen_v7h_f0.55/chunk_l1_0016.npz",
+    "bytes": 65007858,
+    "sha256": "2f9467bafb13622d8a5ae8d567fb0f8b2cf0a8300d2f4753757b945d0fa909d8"
+   }
+  ],
+  "n_files": 34,
+  "location": "weights repository at the pinned revision, synthetic/gen_v7h_f0.55/: the SHA-256-pinned training set of the Development-phase MAST network; train.py --stage mast --synthetic <dir> installs it after a SHA-256 check. Without --synthetic (the default) the generator regenerates the set (H100 829 s, README.md \"Compute\"); on A100 hardware (in our Python 3.11.10 / torch 2.13.0+cu126 pods) that default route trains the shipped network mast/n7h_f0.55 (model.pt SHA-256 bfbb346c713310754deceffe460d2487c31b407db5818fe13c39b2d4a34d22e3) bit for bit (A100-SXM4 and A100 80GB PCIe), while training on the pinned set gave a different network in our A100 test (README.md \"Expected rebuild variance\")"
+ },
+ "pca_basis": "fitted inside each DIII-D training run on the rows that run trains on: every labelled diii_d_train row (train+val+test) for the shipped members, all trained with --alldata (seed 0, K = 128); stored in every model.pt (keys mean, V); MAST net basis in mast/n7h_f0.55/basis.npz"
+}

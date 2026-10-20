@@ -1,0 +1,29 @@
+{
+ "candidate": "final_C",
+ "trainer": "fec/train_d3d_bx.py (batched members; pix/ln compile on Linux)",
+ "groups": [
+  {
+   "name": "w3k_F1",
+   "jobs": "jobs/w3k_F1.json",
+   "tag_replace": [],
+   "group_size": 4,
+   "n": 16
+  },
+  {
+   "name": "old_notsL_axij",
+   "jobs": "jobs/old_notsL_axij.json",
+   "tag_replace": [],
+   "group_size": 7,
+   "n": 14
+  },
+  {
+   "name": "old_notsL_axkl",
+   "jobs": "jobs/old_notsL_axkl.json",
+   "tag_replace": [
+    "d3d_b60ax=d3d_bxax"
+   ],
+   "group_size": 7,
+   "n": 14
+  }
+ ]
+}
