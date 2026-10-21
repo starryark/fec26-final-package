@@ -1,0 +1,19 @@
+{
+ "sigma": 0.17089964273619015,
+ "n_oof": 10909,
+ "oof_r2": 0.5000668156513122,
+ "oof_bias": 6.807074243367491e-05,
+ "frozen_sha256": "2098a4d900f636f70c860326ea252659559ba5b7fc0746c014c46e02d7d17c08",
+ "variant": [
+  1.5,
+  "te15"
+ ],
+ "insample_rms": 0.1713972132814322,
+ "li_E_sd": 0.2417047427616106,
+ "train_est_median": 1.004809638728939,
+ "liE_minus_scorer_mean": -0.016062372711240124,
+ "liE_minus_scorer_rms": 0.04382259964366005,
+ "oof_rms_vs_scorer_li": 0.17832229088038998,
+ "n_scorer": 11201,
+ "note": "TRAIN cal only; computed before any VAL read of this study"
+}

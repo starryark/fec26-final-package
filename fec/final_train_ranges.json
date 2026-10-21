@@ -1,0 +1,14 @@
+{
+ "q95": [
+  0.2932361364364624,
+  19.520709991455078
+ ],
+ "betaN": [
+  0.0,
+  9.815239906311035
+ ],
+ "rule": "q95: TRAIN-frame 0.01/99.99 percentiles; betaN: [0, 99.99 percentile] (fec.build_submission.train_ranges)",
+ "n_train_frames": 1447735,
+ "scal_sha256": "67ad85817dccb5b65c7104e4023fbb92181f55a72dbec3fe1d50cbc3ab57b212",
+ "info_sha256": "e531d5bc3cd4cf27fde947b76cb225870cc830879f05691d823e0abadb9bce53"
+}

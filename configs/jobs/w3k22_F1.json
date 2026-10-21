@@ -1,0 +1,13 @@
+[
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shape_s0 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --seed 0 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shape_s1 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --seed 1 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shapeA_s2 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 2 --win 1 --seed 2 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shapeL_s3 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 3 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shape_s40 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --seed 40 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shape_s41 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --seed 41 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shapeA_s42 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 2 --win 1 --seed 42 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shapeL_s43 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --linskip --seed 43 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shape_s80 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --seed 80 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shape_s81 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 1 --seed 81 --vram_gb 6",
+ "python -B fec/train_d3d_b.py --tag d3d_bxw3e_shapeA_s82 --alldata --epochs 120 --width 3072 --wband 5 --sig 0.05 --wx 3 --rx 0.08 --wgrad 2 --win 1 --seed 82 --vram_gb 6"
+]

@@ -1,0 +1,1 @@
+Vendored from github.com/Sophelio/fusion-equilibrium-challenge-starter at commit 5b467988d2e5f28e20be490a926d0a71649de28d (MIT, see LICENSE): local_score.py, fusion_scoring/*.py and masks/d3d_envelope.npz only (read by the DIII-D li repair's diagnostics and the DIII-D scorer; never an input).  The MAST envelope is not included.

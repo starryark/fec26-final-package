@@ -1,0 +1,18 @@
+{
+ "python": "3.13.15",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "numpy": "2.4.4",
+ "torch": "2.13.0+cu132",
+ "cuda": "13.2",
+ "cudnn": 92000,
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "tf32_matmul": false,
+ "tf32_cudnn": true,
+ "cudnn_deterministic": false,
+ "deterministic_algorithms": false,
+ "cublas_workspace": null,
+ "pythonhashseed": null,
+ "training_image": "runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04 (fec/runpod.py DEFAULT_IMAGE) + pip install numpy>=2 scipy pyarrow pandas scikit-image matplotlib contourpy huggingface_hub psutil requests (versions current on 2026-10-10/11, not recorded)",
+ "training_gpu": "1x NVIDIA H100 80GB HBM3 (SXM) RunPod pods",
+ "inference_machine": "Final submission files: RunPod GPU pods, one per slot (this package's reproduce.sh, inference mode, at the pinned commit; the GPU and CPU model of each build is in its run_fingerprint.json / env.txt); Development-phase files and the README measurements: Windows 11, 1x NVIDIA GeForce RTX 5060 Ti 16 GB (shared)"
+}

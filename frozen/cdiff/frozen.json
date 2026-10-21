@@ -1,0 +1,212 @@
+{
+ "rule": "TRAIN cal only (400 shots, 11,211 frames; EFIT li label li_E in (0.3, 3) as in fec.betap_li). Nominal variant = the (Zeff, IC) with the highest 5-fold shot-grouped TRAIN-CV R2 (fec.betap_li cv_oof, seed 0) of the single-feature robust linear model li ~ a + b li_cyl (fec.betap_li fit_reg); ties within 0.002 -> NOMINAL (2.0, flat). Combined model = the frozen bpli li features (selection.json: tnorm, fgw, bpe, peak_te) + li_cd (nominal li_cyl), same fit_reg / folds. Gate (plan): pass if [(a) VAL R2(li alone) >= 0.517 OR (b) TRAIN-CV R2(combined) >= 0.605 AND VAL R2(combined) >= 0.547] AND VAL corner spread RMS over {Zeff 1.5, 3} x {flat, te15} < SD over frames of the nominal li_cyl. Gains over bpli alone on the same frames are reported beside (b). Labels for the gate: li_E (the bpli bar's target); scorer li(2) of the EFIT psi is secondary.",
+ "bar": {
+  "cv": 0.575,
+  "val": 0.517,
+  "cv_comb": 0.605,
+  "val_comb": 0.547
+ },
+ "variants": [
+  [
+   1.5,
+   "flat"
+  ],
+  [
+   1.5,
+   "te15"
+  ],
+  [
+   2.0,
+   "flat"
+  ],
+  [
+   2.0,
+   "te15"
+  ],
+  [
+   3.0,
+   "flat"
+  ],
+  [
+   3.0,
+   "te15"
+  ]
+ ],
+ "nominal_default": [
+  2.0,
+  "flat"
+ ],
+ "cv_r2_alone_by_variant": {
+  "(1.5, 'flat')": 0.4970679218029883,
+  "(1.5, 'te15')": 0.5000668156513122,
+  "(2.0, 'flat')": 0.4860342831993031,
+  "(2.0, 'te15')": 0.489171910153285,
+  "(3.0, 'flat')": 0.46693335981492623,
+  "(3.0, 'te15')": 0.46983425999995043
+ },
+ "selected_variant": 1,
+ "selected": [
+  1.5,
+  "te15"
+ ],
+ "bpli_feats": [
+  "tnorm",
+  "fgw",
+  "bpe",
+  "peak_te"
+ ],
+ "train_cv": {
+  "alone": 0.5000668156513122,
+  "bpli_same_frames": 0.5775268010265198,
+  "combined": 0.6738919204919194,
+  "bpli_all_frames": 0.5749310969922943,
+  "gain_combined": 0.0963651194653996,
+  "coverage": 0.9739308990268726,
+  "by_phase": {
+   "ramp_up": {
+    "alone": -0.320041841218099,
+    "bpli": 0.13992357346164142,
+    "comb": 0.2796534851364356,
+    "n": 2152
+   },
+   "flat": {
+    "alone": 0.5364446466693227,
+    "bpli": 0.6072978070577284,
+    "comb": 0.6945443659263975,
+    "n": 8492
+   },
+   "ramp_down": {
+    "alone": 0.1751687012166131,
+    "bpli": 0.004060255363354859,
+    "comb": 0.32150918699449027,
+    "n": 265
+   }
+  }
+ },
+ "models": {
+  "alone": {
+   "kind": "li",
+   "feats": [
+    "li_cd"
+   ],
+   "lo": [
+    0.590001917565555
+   ],
+   "hi": [
+    2.5171393495270054
+   ],
+   "mu": [
+    1.2595523371714528
+   ],
+   "sd": [
+    0.3052390617630822
+   ],
+   "coef": [
+    1.0234580580225403,
+    0.18409536358333586
+   ],
+   "n_fit": 10909
+  },
+  "combined": {
+   "kind": "li",
+   "feats": [
+    "tnorm",
+    "fgw",
+    "bpe",
+    "peak_te",
+    "li_cd"
+   ],
+   "lo": [
+    -4.1119120299768745,
+    -2.949971472802419,
+    -3.764920433214057,
+    0.05240002048999529,
+    0.5899261113179473
+   ],
+   "hi": [
+    1.0718768211761598,
+    0.019045793677272164,
+    0.6779510991284687,
+    1.549574759371571,
+    2.5135118343882734
+   ],
+   "mu": [
+    -2.0629476850069084,
+    -1.2605446239774265,
+    -1.5778507706183629,
+    0.8100197841529426,
+    1.2596846295747717
+   ],
+   "sd": [
+    0.9662941713765583,
+    0.6128476303206738,
+    0.976549816933477,
+    0.2785758000618198,
+    0.3047481951068237
+   ],
+   "coef": [
+    1.0213098291003446,
+    0.10257737268276165,
+    -0.1532379508162276,
+    0.11897984760958774,
+    0.03053847259310064,
+    0.09695721737728405
+   ],
+   "n_fit": 10876
+  }
+ },
+ "train_sensitivity": {
+  "ramp_up": {
+   "n": 2152,
+   "sd_nominal": 0.3141246036675286,
+   "spread_rms": 0.09087371286528684,
+   "spread_med": 0.0694861359951065,
+   "spread_p90": 0.12800423661758556,
+   "zeff_rms": 0.07611357394872706,
+   "ic_rms": 0.045446190841631755,
+   "ratio": 0.2892919300312692,
+   "passes": true
+  },
+  "flat": {
+   "n": 8492,
+   "sd_nominal": 0.2779515000130261,
+   "spread_rms": 0.04465367339049562,
+   "spread_med": 0.02824097759169164,
+   "spread_p90": 0.07480773607297729,
+   "zeff_rms": 0.043506287340849874,
+   "ic_rms": 0.007799320580499911,
+   "ratio": 0.16065275196717033,
+   "passes": true
+  },
+  "ramp_down": {
+   "n": 274,
+   "sd_nominal": 0.562292998454356,
+   "spread_rms": 0.21159177346889518,
+   "spread_med": 0.058906853854350905,
+   "spread_p90": 0.18835203855398772,
+   "zeff_rms": 0.21158202605494925,
+   "ic_rms": 0.0010097740842311832,
+   "ratio": 0.37630163286849305,
+   "passes": true
+  },
+  "all": {
+   "n": 10918,
+   "sd_nominal": 0.3166766440401892,
+   "spread_rms": 0.06559099608338767,
+   "spread_med": 0.03406894129533966,
+   "spread_p90": 0.08988041153198116,
+   "zeff_rms": 0.061135757770049176,
+   "ic_rms": 0.021317412357083895,
+   "ratio": 0.2071229353910406,
+   "passes": true
+  }
+ },
+ "sha256": {
+  "d3d_cal.npz": "fdf9705425188f9839fa4cd0c2e75df584fdf6cd4ba6f4876a528f48a9003272",
+  "records_cal.npz": "13cf5f0a092a577d585c0b0b3eb2230d2d8b0ff66a468d6d6521932cabc60288",
+  "targets_cal.npz": "fce3f4641ab2dca61d952d8f228133783040dcdaa569c0eb5a21e865214ec3a2",
+  "selection.json": "787dc56d629010339fe0c85df0ca2381785da0227acf070f715b3c9126ad8392",
+  "current_diffusion.py": "bf7f71ce16f5a08e4596afedd994eb74d3ef4e8ae077b62b18962b30d3827868"
+ },
+ "frozen_at": "2026-10-09T09:21:21-0700"
+}

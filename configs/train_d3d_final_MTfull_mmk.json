@@ -1,0 +1,68 @@
+{
+ "candidate": "final_MTfull_mmk",
+ "trainer": "fec/train_d3d_bx.py (batched members; pix/ln compile on Linux)",
+ "groups": [
+  {
+   "name": "mt22_F1",
+   "jobs": "jobs/mt22_F1.json",
+   "tag_replace": [],
+   "group_size": 4,
+   "n": 11,
+   "aux": {
+    "heads": "shape_jphi",
+    "w": 1.0
+   }
+  },
+  {
+   "name": "mt22_F2",
+   "jobs": "jobs/mt22_F2.json",
+   "tag_replace": [],
+   "group_size": 4,
+   "n": 11,
+   "aux": {
+    "heads": "shape_jphi",
+    "w": 1.0
+   }
+  },
+  {
+   "name": "old_notsL_axij",
+   "jobs": "jobs/old_notsL_axij.json",
+   "tag_replace": [],
+   "group_size": 7,
+   "n": 14
+  },
+  {
+   "name": "old_notsL_axkl",
+   "jobs": "jobs/old_notsL_axkl.json",
+   "tag_replace": [
+    "d3d_b60ax=d3d_bxax"
+   ],
+   "group_size": 7,
+   "n": 14
+  },
+  {
+   "name": "mtftA22_F1",
+   "jobs": "jobs/mtftA22_F1.json",
+   "tag_replace": [],
+   "group_size": 4,
+   "n": 11,
+   "li2_cache": true,
+   "aux": {
+    "heads": "shape_jphi",
+    "w": 1.0
+   }
+  },
+  {
+   "name": "mtftA22_F2",
+   "jobs": "jobs/mtftA22_F2.json",
+   "tag_replace": [],
+   "group_size": 4,
+   "n": 11,
+   "li2_cache": true,
+   "aux": {
+    "heads": "shape_jphi",
+    "w": 1.0
+   }
+  }
+ ]
+}
